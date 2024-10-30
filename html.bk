@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=5vV_csnCe5Q2&format=png&color=000000" type="image/x-icon">
+    <title>TERRIBILE SPACE</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: #fefefe;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #61dafb;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+          text-align: center;
+        }
+
+        .immagine {
+          display: block;
+          margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://img.icons8.com/?size=100&id=5vV_csnCe5Q2&format=png&color=000000" alt="">
+    </div>
+
+    <h1 id="titolo">Benvenuto</h1>
+    <div>
+        <a href="https://db.casasmart.me">segnalazione allerte</a><br>
+        <a href="https://casasmart.me">domotica</a><br>
+        <a href="https://bestemmie.terribile.space">generatore di bestemmie</a><br>
+        <a href="https://impostore.nonnavitto.it/">gioco dell'impostore</a>
+    </div>
+    <script type="text/javascript">
+        
+        // Array di coppie lingua-frase (sostituisci con le tue coppie)
+        const lingue = [
+          { lingua: "Afrikaans", frase: "welkom" },
+            { lingua: "Amarico", frase: "እንኳን ደህና መጣህ" },
+            { lingua: "Hausa", frase: "barka da zuwa" },
+            { lingua: "Igbo", frase: "nabata" },
+            { lingua: "Malgascio", frase: "tonga soa" },
+            { lingua: "Nyanja", frase: "takulandirani" },
+            { lingua: "Shona", frase: "mauya" },
+            { lingua: "Somalo", frase: "soo dhawow" },
+            { lingua: "Sesotho", frase: "amohela" },
+            { lingua: "Swahili", frase: "karibu" },
+            { lingua: "Xhosa", frase: "wamkelekile" },
+            { lingua: "Yoruba", frase: "kaabo" },
+            { lingua: "Zulu", frase: "wamukelekile" },
+            { lingua: "Bambara", frase: "i danse" },
+            { lingua: "Pecora", frase: "woezɔ̃" },
+            { lingua: "Kinyarwanda", frase: "murakaza neza" },
+            { lingua: "Lingala", frase: "boyei malamu" },
+            { lingua: "Uganda", frase: "kaale" },
+            { lingua: "Sepedi", frase: "le amogetšwe" },
+            { lingua: "Twi", frase: "akwaaba" },
+            { lingua: "Arabo", frase: "أهلا بك" },
+            { lingua: "Ebraico", frase: "ברוך הבא" },
+            { lingua: "Pashto", frase: "ښه راغلاست" },
+            { lingua: "Arabo", frase: "أهلا بك" },
+            { lingua: "Albanese", frase: "mirëseardhje" },
+            { lingua: "Basco", frase: "ongi etorria" },
+            { lingua: "Catalano", frase: "benvingut" },
+            { lingua: "Croato", frase: "dobrodošli" },
+            { lingua: "Danese", frase: "velkommen" },
+            { lingua: "Olandese", frase: "welkom" },
+            { lingua: "Inglese", frase: "welcome" },
+            { lingua: "Francese", frase: "bienvenue" },
+            { lingua: "Frisone", frase: "wolkom" },
+            { lingua: "Galiziano", frase: "benvido" },
+            { lingua: "Tedesco", frase: "herzlich willkommen" },
+            { lingua: "Islandese", frase: "velkominn" },
+            { lingua: "Irlandesi", frase: "fáilte" },
+            { lingua: "Italiano", frase: "benvenuto" },
+            { lingua: "Lussemburghese", frase: "wëllkomm" },
+            { lingua: "Maltese", frase: "merħba" },
+            { lingua: "Norvegese", frase: "velkommen" },
+            { lingua: "Portoghese", frase: "bem-vinda" },
+            { lingua: "Gaelico", frase: "fàilte" },
+            { lingua: "Spagnolo", frase: "bienvenidos" },
+            { lingua: "Svedese", frase: "välkommen" },
+            { lingua: "Gallese", frase: "croeso" },
+            { lingua: "Bielorusso", frase: "вітаем" },
+            { lingua: "Bosniaco", frase: "dobrodošli" },
+            { lingua: "Bulgaro", frase: "добре дошли" },
+            { lingua: "Ceco", frase: "vítejte" },
+            { lingua: "Estone", frase: "tere tulemast" },
+            { lingua: "Finlandese", frase: "tervetuloa" },
+            { lingua: "Ungherese", frase: "üdvözöljük" },
+            { lingua: "Lettone", frase: "laipni gaidīti" },
+            { lingua: "Lituano", frase: "sveiki" },
+            { lingua: "Macedone", frase: "добредојде" },
+            { lingua: "Polacco", frase: "witamy" },
+            { lingua: "Rumeno", frase: "bine ati venit" },
+            { lingua: "Russo", frase: "добро пожаловать" },
+            { lingua: "Serbo", frase: "добродошли" },
+            { lingua: "Slovacco", frase: "vitaj" },
+            { lingua: "Sloveno", frase: "dobrodošli" },
+            { lingua: "Ucraino", frase: "ласкаво просимо" },
+            { lingua: "Bengalese", frase: "স্বাগত" },
+            { lingua: "Gujarati", frase: "સ્વાગત છે" },
+            { lingua: "Hindi", frase: "स्वागत हे" },
+            { lingua: "Kannada", frase: "ಸ್ವಾಗತ" },
+            { lingua: "Malayalam", frase: "സ്വാഗതം" },
+            { lingua: "Marathi", frase: "स्वागत आहे" },
+            { lingua: "Nepalese", frase: "स्वागतम्" },
+            { lingua: "Punjabi", frase: "ਸਵਾਗਤ ਹੈ" },
+            { lingua: "Singalese", frase: "සාදරයෙන් පිළිගනිමු" },
+            { lingua: "Tamil", frase: "வரவேற்பு" },
+            { lingua: "Telugu", frase: "స్వాగతం" },
+            { lingua: "Urdu", frase: "خوش آمدید" },
+            { lingua: "Cinese", frase: "欢迎" },
+            { lingua: "Cinese", frase: "歡迎" },
+            { lingua: "Giapponese", frase: "ようこそ" },
+            { lingua: "Coreano", frase: "어서 오십시오" },
+            { lingua: "Mongolo", frase: "тавтай морилно уу" },
+            { lingua: "Myanmar", frase: "ကြိုဆိုပါတယ်" },
+            { lingua: "Indonesiano", frase: "selamat datang" },
+            { lingua: "Giavanese", frase: "sugeng rawuh" },
+            { lingua: "Khmer", frase: "សូមស្វាគមន៍" },
+            { lingua: "Lao", frase: "ຍິນດີຕ້ອນຮັບ" },
+            { lingua: "Malese", frase: "selamat datang" },
+            { lingua: "Tailandese", frase: "ยินดีต้อนรับ" },
+            { lingua: "Vietnamita", frase: "chào mừng" },
+            { lingua: "Filippino", frase: "maligayang pagdating" },
+            { lingua: "Azero", frase: "xoş gəlmisiniz" },
+            { lingua: "Kazako", frase: "қош келдіңіз" },
+            { lingua: "Kirghizistan", frase: "кош келдиңиз" },
+            { lingua: "Tagiko", frase: "хуш омадед" },
+            { lingua: "Turkmeno", frase: "hoş geldiňiz" },
+            { lingua: "Uzbeko", frase: "xush kelibsiz" },
+            { lingua: "Uiguro", frase: "قارشى ئالىمىز" },
+            { lingua: "Hawaiano", frase: "welina" },
+            { lingua: "Maori", frase: "nau mai" },
+            { lingua: "Samoano", frase: "afio mai" },
+            { lingua: "Tagalog", frase: "maligayang pagdating" },
+            { lingua: "Aymara", frase: "aski jutäwi" },
+            { lingua: "Guarani", frase: "tapeg̃uahẽporãite" },
+            { lingua: "Esperanto", frase: "bonvenon" },
+            { lingua: "Latino", frase: "gratissimum" },
+            { lingua: "Greco", frase: "καλως ηρθατε" },
+            { lingua: "Hmong", frase: "txais tos" },
+            { lingua: "Curdo", frase: "bi xêr hatî" },
+            { lingua: "Turco", frase: "hoşgeldiniz" },
+            { lingua: "Xhosa", frase: "wamkelekile" },
+            { lingua: "Yiddish", frase: "באַגריסן" },
+            { lingua: "Zulu", frase: "wamukelekile" },
+            { lingua: "Assamese", frase: "স্বাগতম" },
+            { lingua: "Aymara", frase: "aski jutäwi" },
+            { lingua: "Bhojpuri", frase: "स्वागत" },
+            { lingua: "Dhivehi", frase: "މަރުޙަބާ" },
+            { lingua: "Dogri", frase: "सुआगत" },
+            { lingua: "Filippino", frase: "maligayang pagdating" },
+            { lingua: "Guarani", frase: "tapeg̃uahẽporãite" },
+            { lingua: "Ilocano", frase: "naragsak nga isasangbay" },
+            { lingua: "Krio", frase: "wɛlkɔm" },
+            { lingua: "Curdo", frase: "بەخێربێیت" },
+            { lingua: "Maithili", frase: "स्वागत    " },
+            { lingua: "Mizo", frase: "chibai" },
+            { lingua: "Oromo", frase: "baga nagaan dhufte" },
+            { lingua: "Odia", frase: "ସ୍ୱାଗତ" },
+            { lingua: "Quechua", frase: "allinlla chayaykamuy" },
+            { lingua: "Sanscrito", frase: "स्वागतम्" },
+            { lingua: "Tartaro", frase: "рәхим итегез" },
+            { lingua: "Tigrino", frase: "እንኳዕ ደሓን መፁ" },
+            { lingua: "Tsonga", frase: "amukela" }
+        ];
+
+        // Seleziona l'elemento h1
+        const titolo = document.getElementById("titolo");
+
+        // Funzione per cambiare la frase
+        function cambiaFrase() {
+          // Seleziona una coppia lingua-frase random
+          const indice = Math.floor(Math.random() * lingue.length);
+          const fraseRandom = lingue[indice];
+
+          // Aggiorna il testo dell'elemento h1
+          titolo.textContent = fraseRandom.frase;
+        }
+
+        // Chiama la funzione ogni 500 millisecondi
+        setInterval(cambiaFrase, 500);
+    </script>
+</body>
+</html>
